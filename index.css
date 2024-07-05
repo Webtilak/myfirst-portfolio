@@ -10,7 +10,7 @@
 /* Basic body styling */
 body {
     height: 100vh;
-    background-image: url('../image/pexels-jvdm-1457841.jpg');
+    background-image: url('image/pexels-jvdm-1457841.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
