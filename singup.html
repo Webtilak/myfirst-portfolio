@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>singup</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html"><i class="fa-solid fa-arrow-left"></i> Back to site</a>
+    </div>
+    <div class="container">
+        <h1>Elevate Design</h1>
+        <h2>Create an Account</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()"><i class="fa-solid fa-eye"></i></span>
+            </div>
+            <button type="submit">SIGN UP</button>
+            <p class="sign-in">Already have an account? <a href="login.html">Login In</a></p>
+            <hr>
+            <button class="social-button facebook"><i class="fa-brands fa-facebook"></i>Sign up with Facebook</button>
+            <button class="social-button google"><i class="fa-brands fa-google"></i>Sign up with Google</button>
+            <button class="social-button apple"><i class="fa-brands fa-apple"></i>Sign up with Apple</button>
+            <button class="social-button microsoft"><i class="fa-brands fa-microsoft"></i>Sign up with Microsoft</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

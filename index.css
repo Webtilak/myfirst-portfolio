@@ -1,0 +1,110 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reset padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Basic body styling */
+body {
+    height: 100vh;
+    background-image: url('../image/pexels-jvdm-1457841.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Hero section styling */
+.herosection {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    z-index: 1;
+}
+
+.herosection > h1 {
+    color: rgb(226, 217, 217);
+}
+
+.herosection > p {
+    color: aliceblue;
+}
+
+.herosection > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.herosection > button {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.herosection > button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    scale: 0.9;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .herosection {
+        font-size: 1.5rem;
+    }
+
+    .herosection > button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+
+    .herosection > h1 {
+        margin-bottom: 15px;
+    }
+
+    .herosection > p {
+        margin-bottom: 15px;
+    }
+
+    .herosection {
+        font-size: 0.9rem;
+        top: 40%;
+    }
+
+    .herosection > button {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
